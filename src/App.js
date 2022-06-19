@@ -1,24 +1,18 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 
+
+const Photo = React.lazy(() => import('./components/Photo'));
+
+
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1>Photo Search App</h1>
+ <Photo/>
     </div>
+  
   );
 }
 
